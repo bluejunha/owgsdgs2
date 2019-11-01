@@ -12,9 +12,11 @@
 
 sdgs관점에서의 한국 자료 들 업로드 
 
-![Screen Shot 2019-11-01 at 22.08.09](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.08.09.png)
+<img width="946" alt="Screen Shot 2019-11-01 at 22 08 09" src="https://user-images.githubusercontent.com/57247486/68031290-b7f9b980-fcfe-11e9-9221-6404c0a66276.png">
+<img width="946" alt="Screen Shot 2019-11-01 at 22 07 38" src="https://user-images.githubusercontent.com/57247486/68031312-c051f480-fcfe-11e9-9cf7-52e28290ca65.png">
 
-![Screen Shot 2019-11-01 at 22.07.38](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.07.38.png)
+
+
 
 
 
@@ -44,9 +46,7 @@ sdgs관점에서의 한국 자료 들 업로드
 
 ![1571056947808_ksdgs추진체계](http://66.42.33.8/api/1571056947808_ksdgs%EC%B6%94%EC%A7%84%EC%B2%B4%EA%B3%84.png)
 
-
-
-![Screen Shot 2019-11-01 at 22.42.11](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.42.11.png)
+<img width="453" alt="Screen Shot 2019-11-01 at 22 42 11" src="https://user-images.githubusercontent.com/57247486/68031334-d19b0100-fcfe-11e9-842b-3878b73e8724.png">
 
 
 
@@ -70,11 +70,15 @@ sdgs관점에서의 한국 자료 들 업로드
 
 통계지표들은 지표대로 산정된 것 통계개발원 에서 생각하지못한 통계나 청년이 주체가 될수 있는 통계 지표 찾기 혹은 추가조사할수 있어보이는거 찾기 
 
-![Screen Shot 2019-11-01 at 22.52.43](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.52.43.png)
+<img width="401" alt="Screen Shot 2019-11-01 at 22 52 43" src="https://user-images.githubusercontent.com/57247486/68031335-d2339780-fcfe-11e9-8c06-f89bafc565e9.png">
 
-![Screen Shot 2019-11-01 at 22.53.03](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.53.03.png)
+<img width="407" alt="Screen Shot 2019-11-01 at 22 53 03" src="https://user-images.githubusercontent.com/57247486/68031336-d2339780-fcfe-11e9-8c3c-f7f3fc76577f.png">
 
-![Screen Shot 2019-11-01 at 22.53.15](/Users/macbook/Desktop/untitled folder/Screen Shot 2019-11-01 at 22.53.15.png)
+<img width="407" alt="Screen Shot 2019-11-01 at 22 53 15" src="https://user-images.githubusercontent.com/57247486/68031337-d2339780-fcfe-11e9-8425-c775fa43d348.png">
+
+
+
+
 
 
 
