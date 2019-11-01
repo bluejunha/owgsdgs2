@@ -22,7 +22,8 @@ sdgs관점에서의 한국 자료 들 업로드
 
 아래는 한국의 
 
-<iframe width="800" height="600" title="Zero Hunger" src="https://country-profiles.unstatshub.org/kor?goal=2&series=SN_ITK_DEFC,SH_STA_STUNT,SH_STA_OVRWGT" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<embed width="800" height="600" title="Zero Hunger" src="https://country-profiles.unstatshub.org/kor?goal=2&series=SN_ITK_DEFC,SH_STA_STUNT,SH_STA_OVRWGT" frameborder="0" marginheight="0" marginwidth="0"></embed>
+
 
 
 
@@ -161,7 +162,7 @@ sdgs관점에서의 한국 자료 들 업로드
 
 
 
- 
+
 
 국내 식량 안보
 
@@ -264,7 +265,7 @@ sdgs관점에서의 한국 자료 들 업로드
  
 
 
- 
+
 
 <농업활성화를 위한 지원 및 인프라 구축>
 
