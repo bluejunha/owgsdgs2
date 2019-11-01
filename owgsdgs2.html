@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>owgsdgs2</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name="청년형-지속가능목표수립-sdgs2-" class="md-header-anchor"></a><span>청년형 지속가능목표수립 (sdgs2 )</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#청년형-지속가능목표수립-sdgs2-">청년형 지속가능목표수립 (sdgs2 )</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#sdgs-2번-목표에-대한-개념-이해">SDGS 2번 목표에 대한 개념 이해 </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4"><a class="md-toc-inner" href="#sdgs-2번-목표">SDGS 2번 목표</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n14"><a class="md-toc-inner" href="#k-sdgs-2번-목표">K-SDGS 2번 목표</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n32"><a class="md-toc-inner" href="#한국-청년형-목표-키워드-정의-논의">한국 청년형 목표 키워드 정의 논의 </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n36"><a class="md-toc-inner" href="#지표-통계-및-세부조사">지표 통계 및 세부조사</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n37"><a class="md-toc-inner" href="#정부의-노력">정부의 노력 </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n39"><a class="md-toc-inner" href="#통계지표들">통계지표들</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n47"><a class="md-toc-inner" href="#청년형-목표수립">청년형 목표수립</a></span></p></div><h2><a name="sdgs-2번-목표에-대한-개념-이해" class="md-header-anchor"></a><span>SDGS 2번 목표에 대한 개념 이해 </span></h2><h3><a name="sdgs-2번-목표" class="md-header-anchor"></a><span>SDGS 2번 목표</span></h3><p><span>설명 추가 기본적인 설명 </span></p><p>&nbsp;</p><p><span>sdgs관점에서의 한국 자료 들 업로드 </span></p><p><img width="946" alt="Screen Shot 2019-11-01 at 22 08 09" src="https://user-images.githubusercontent.com/57247486/68031290-b7f9b980-fcfe-11e9-9221-6404c0a66276.png">
+<img width="946" alt="Screen Shot 2019-11-01 at 22 07 38" src="https://user-images.githubusercontent.com/57247486/68031312-c051f480-fcfe-11e9-9cf7-52e28290ca65.png"></p><p>&nbsp;</p><p>&nbsp;</p><p><span>아래는 한국의 </span></p><iframe width="800" height="600" title="Zero Hunger" src="https://country-profiles.unstatshub.org/kor?goal=2&amp;series=SN_ITK_DEFC,SH_STA_STUNT,SH_STA_OVRWGT" frameborder="0" marginheight="0" marginwidth="0"></iframe><h3><a name="k-sdgs-2번-목표" class="md-header-anchor"></a><span>K-SDGS 2번 목표</span></h3><p><span>와닫는 그리고 소통하는 목표로 개발됨을 느끼게하는 프레임 구조 만들기 </span></p><ol start='' ><li><span>ksdgs는 국가적으로 시민사회적으로 각 주체별로 와닫고 할수 있는 것 실천가능성과 의미가 충분히 미래적으로도 현재로도 동의된사항이어야함을 강조하며 소통하는 부분임을 강조하자 . </span></li><li><span>18년부터 지금까지 19년까지 이행되고 있는 부분 시간대로 스토리 텔링하기 </span></li><li><span>현재 정부 방향까지 </span></li></ol><p>&nbsp;</p><p>&nbsp;</p><p><img src="http://ncsd.go.kr/api/1572497555134_ksdgs_table_2.png" referrerpolicy="no-referrer" alt="1572497555134_ksdgs_table_2"></p><p><span>  국가 지속가능발전목표 지속가능발전목표(K-SDGs)수립 추진경과 및 세부목표‧지표 체계(안) 2018. 7. 27.</span></p><p>&nbsp;</p><p><img src="http://66.42.33.8/api/1571056947808_ksdgs%EC%B6%94%EC%A7%84%EC%B2%B4%EA%B3%84.png" referrerpolicy="no-referrer" alt="1571056947808_ksdgs추진체계"></p><p><img width="453" alt="Screen Shot 2019-11-01 at 22 42 11" src="https://user-images.githubusercontent.com/57247486/68031334-d19b0100-fcfe-11e9-842b-3878b73e8724.png"></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name="한국-청년형-목표-키워드-정의-논의" class="md-header-anchor"></a><span>한국 청년형 목표 키워드 정의 논의 </span></h2><p><span>한국 청년형 목표 키워드는 </span></p><p><span>2일날 하기 </span></p><p>&nbsp;</p><h2><a name="지표-통계-및-세부조사" class="md-header-anchor"></a><span>지표 통계 및 세부조사</span></h2><h3><a name="정부의-노력" class="md-header-anchor"></a><span>정부의 노력 </span></h3><p><span>정부의 노력은 알리바이 맞추기 </span></p><h3><a name="통계지표들" class="md-header-anchor"></a><span>통계지표들</span></h3><p><span>통계지표들은 지표대로 산정된 것 통계개발원 에서 생각하지못한 통계나 청년이 주체가 될수 있는 통계 지표 찾기 혹은 추가조사할수 있어보이는거 찾기 </span></p><p><img width="401" alt="Screen Shot 2019-11-01 at 22 52 43" src="https://user-images.githubusercontent.com/57247486/68031335-d2339780-fcfe-11e9-8c06-f89bafc565e9.png"></p><p><img width="407" alt="Screen Shot 2019-11-01 at 22 53 03" src="https://user-images.githubusercontent.com/57247486/68031336-d2339780-fcfe-11e9-8c3c-f7f3fc76577f.png"></p><p><img width="407" alt="Screen Shot 2019-11-01 at 22 53 15" src="https://user-images.githubusercontent.com/57247486/68031337-d2339780-fcfe-11e9-8425-c775fa43d348.png"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2><a name="청년형-목표수립" class="md-header-anchor"></a><span>청년형 목표수립</span></h2><p><span>최종 단계 내일 저녁 전에 마무리해야함.</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><p><strong><span>청년 기업활동을 통한 소외계층 결식 해소</span></strong><span> (모델: 진짜파스타)</span></p><p><span>작성자: 조영지</span></p><p><span> </span></p><p><span>ㄱ. 지속 가능한 특성(기대효과)</span></p><p><span>1) 지속가능성에 기여</span></p><p><span>\1. 사회적 약자가 직접적인 사업 대상이 되어 실제적인 권익 향상에 기여하여 사회 전체의 지속가능성을 제고한다.</span></p><p><span>\2. 소외 계층에 대한 사회적 인식 수준을 향상시켜 향후 장기적이고 연속적인 관심과 참여를 이끌어낼 동기가 된다.</span></p><p><span>\3. 같은 동기 혹은 목적의식을 지닌 주체들이 자발적인 네트워크를 구축할 경우 정보공유, 상호감시, 수혜 대상 확대 등의 기능을 수행하고 사업 안정성을 확보할 수 있다.(해당 모델의 경우 ‘선한 영향력 프로젝트’)</span></p><p><span> </span></p><p><span>2) 지속가능성에 수혜</span></p><p><span>\1. 수익성 창출이라는 기업의 기본 목표를 수행하는데 있어 기업 브랜드 가치 창출, 마케팅 효과 등을 통해 긍정적 영향을 받고 이는 지속적으로 시장 참여자가 확대될 인센티브로 작동한다.</span></p><p><span> </span></p><p><span> </span></p><p><span>ㄴ. 지속 불가능한 특성(보완이 필요한 점)</span></p><p><span>\1. 경제적 수익성이 일반 기업보다 현저히 낮아 이를 감수하려는 사업가 및 직원들의 의지가 선행이라는 동기에 절대적으로 의존한다는 점에서 프로젝트성에 그치거나 시장 퇴출요인이 될 우려가 있다.</span></p><p><span>\2. 선례가 부족하여 신규 시장 진입자의 모험적 태도를 기대할 수 밖에 없으며 사업모델을 새롭게 구축해야 한다는 부담이 존재하나 이를 해결하고자 선구자에게 수익 창출 전략 공유를 요구하는 것은 현실적으로 불가능하다.</span></p><p><span> </span></p><p><span> </span></p><p><span>ㄷ. 해결하기 위한 정부의 노력</span></p><p><span>\1. 정부 또는 다른 기관 및 단체(기업, 은행, 재단 등)가 주도하는 다양한 창업지원사업을 활용하여 교육, 예산, 네트워크 등의 수혜를 보고 사업 초기의 부담을 어느 정도 해소할 수 있다.</span></p><p><span>\2. 정부는 ‘꿈나무 카드’를 통해 결식아동에게 가맹점 결제 시 한끼당 최대 5000원을 지원하고 있다. 하지만 이는 현실 물가를 반영하지 못하며 아동의 심리적 요인을 고려하지 못해 실질적인 효과를 거두지 못하고 있다는 비판이 있다.</span></p><p><span> </span></p><p><span>ㄹ. 지표</span></p><p><span>\1. 사회적 가치지표(SVI)의 사회적 성과 부문을 차용하여 평가 대상 기업이 사회기여적 목적을 지닌 기업인지 판단한다. (붙임1 참조)</span></p><p><span>\2. 청년기업 활동이 사회에 실질적으로 미치는 긍정적 영향을 파악하기 위해서 결식지원 대상의 만족도 조사를 주기적으로 실시하여</span></p><p><span>(i) 자신의 생활에 실질적으로 도움을 준다고 인식되는 기업의 수 및 기업명을 조사한다.</span></p><p><span>(ii) 조사결과를 추합하여 언급된 기업 중 청년 기업의 개수 및 비율을 파악한다.</span></p><p><span>(iii) 전체 사회기여형 청년 기업 중 설문에서 언급된 기업의 개수 및 비율을 파악한다.</span></p><p><span> </span></p><p><span>붙임1. 사회적 가치지표(SVI) 총괄표</span></p><p><a href='https://blog.naver.com/PostView.nhn?blogId=se365company&amp;logNo=221521328080&amp;from=search&amp;redirect=Log&amp;widgetTypeCall=true&amp;topReferer=https://search.naver.com/search.naver?sm%3Dtab_hty.btm%26where%3Dnexearch%26query%3D사회적%2B기업%2B지표%26oquery%3D진짜%2B파스타%2B지원금%26tqi%3DUkT6ywp0JXossFqCO/wssssst9R-297877&amp;directAccess=false'><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.jpg" referrerpolicy="no-referrer" alt="https://postfiles.pstatic.net/MjAxOTA0MjRfMjU1/MDAxNTU2MDcwMzczNzI1.p7YR-YXLMHtEAQIzq0WADwp1nqxqDIHdIvwi5Fls4NMg.wFioHF6Zif4tMRad-yuLLYZs_fRMpyLKWXVJYoEOLCwg.JPEG.se365company/5344_20027_5642.jpg?type=w966"></a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span>국내 식량 안보</span></p><p><span> </span></p><p><span>작성자 : 정태민</span></p><p><span> </span></p><p><strong><span>1. 지속가능성(이유)</span></strong><span> </span></p><p><span>한국의 식량안보지수는 비교적 높은 편인 75.6으로 세계 25위이며(EIU,2018), 이는 한국이 높은 경제력을 이용해 모자라는 식량을 해외에서 수입할 수 있기 때문(한국과학기술한림원).</span></p><p><span> </span></p><p><span> </span></p><p><strong><span>2. 지속불가능성(이유)</span></strong></p><p><span>1)현저히 낮은 자급률 </span></p><p><span>우리나라 식량자급률 곡물기준 24%, 전체 식량에너지 기준 50%.</span></p><p><span>1980년대 50%를 상회하던 한국의 곡물자급률은 급격히 하락하여 세계무역기구(WTO)가 창설된 1995년에는 30%로 낮아졌고 이후에도 계속 떨어져 2015년에는 24%를 기록하고 있음. 우리나라는 식량자급률과 식량자주율이 같으며, 해외 곡물유통라인 확보도 안정적이지 못해 일정 부분은 일본 곡물상을 통해 수입하고 있어 세계 관련 시장 가격 충격에 매우 취약한 상태에 있음.</span></p><p><span> </span></p><p><span>2)식량사슬에서 일어나는 식량의 낭비</span></p><p><span>유엔 세계식량계획(WFP)에 따르면 매년 전 세계에서 생산하는 식량 40억톤 중 3분의 1은 손실되거나 낭비되는 실정이다. 경제적 손실로 따지면 연간 1조 달러(약 1118조원)에 이른다.</span></p><p><span>대한민국 1인당 연간 식품 폐기량 :73kg (HLPE, 2014)</span></p><p><span>음식폐기물 구성 : 유통·조리과정에서 발생 57%, 남은 음식물 30%, 보관 폐기 식재료 9%, 먹지 않은 음식물 4% (환경부, 2013) </span></p><p><span> </span></p><p><span>*식품공급사슬에 속해있는 모든 참여자들(농업생산자, 식품가공업자, 유통업자, 소비자, 운송업자 등)과 정부 각 처(농림축산식품부, 환경부 등)의 노력이 필요함. (IAP 식량영양안보와 농업-한국의 전망, 한국과학기술한림원, 2016)</span></p><p><span>*음식물 쓰레기의 발생량을 줄이고 신선식품의 유통을 원활히 하기 위해 수확 현장에서 행해지는 최소가공방식(minimal processing)이 활용되고 있음.</span></p><p><span> </span></p><p><span> </span></p><p><strong><span>3*</span></strong><span>*. 해결하기 위한 정부의 노력** </span></p><p><span>1)곤충사업 확대</span></p><p><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>고단백 저지방 식품-소/닭/돼지에 밀리지 않은 영양소 갖춤.</span></p><p><span>농림축산식품부는 3천억 규모의 국내 곤충사업을 2020년까지 5천억원으로 키울 예정. 곤충 사업 유통망 정비하고 연구개발에 집중 투자하는 중임.</span></p><p><span>2)품종 개량 및 종자 육성</span></p><p><span> </span></p><p><span>3)식량안보법 제정 추진</span></p><p><span>농업만의 사안이 아닌 국제통상,가공 유통, 소비 전 과정에서 다루어야함을 의미.더구나 남북분단의 현실속에서 북한주민을 위한 식량지원과 통일 후 식량안보를 준비해야하는 한반도 특수성 생각하면 특수한 미래지향적 법안이 되어야함.(식품음료신문)</span></p><p><span> </span></p><p><strong><span>4.</span></strong><span> </span><strong><span>지표</span></strong><span>   </span></p><p><span>   </span><strong><span>식량자급률</span></strong><span>             (단위 : % )</span></p><figure><table><thead><tr><th><span>양곡연도</span></th><th><strong><span>계</span></strong></th><th><span>쌀</span></th><th><span>보리쌀</span></th><th><span>밀</span></th><th><span>옥수수</span></th><th><span>콩</span></th><th><span>서 류</span></th><th><span>기 타</span></th></tr></thead><tbody><tr><td><span>‘01</span></td><td><strong><span>56.8</span></strong></td><td><span>102.7</span></td><td><span>77.2</span></td><td><span>0.1</span></td><td><span>3.1</span></td><td><span>28.1</span></td><td><span>110.4</span></td><td><span>18.1</span></td></tr><tr><td><span>‘02</span></td><td><strong><span>58.3</span></strong></td><td><span>107.0</span></td><td><span>61.9</span></td><td><span>0.3</span></td><td><span>2.8</span></td><td><span>28.5</span></td><td><span>110.0</span></td><td><span>19.1</span></td></tr><tr><td><span>‘03</span></td><td><strong><span>53.3</span></strong></td><td><span>97.4</span></td><td><span>50.0</span></td><td><span>0.5</span></td><td><span>3.5</span></td><td><span>29.0</span></td><td><span>109.1</span></td><td><span>16.4</span></td></tr><tr><td><span>‘04</span></td><td><strong><span>50.2</span></strong></td><td><span>96.5</span></td><td><span>56.9</span></td><td><span>0.5</span></td><td><span>3.3</span></td><td><span>25.0</span></td><td><span>107.6</span></td><td><span>11.6</span></td></tr><tr><td><span>‘05</span></td><td><strong><span>53.6</span></strong></td><td><span>102.0</span></td><td><span>59.0</span></td><td><span>0.4</span></td><td><span>3.4</span></td><td><span>30.9</span></td><td><span>109.2</span></td><td><span>12.8</span></td></tr><tr><td><span>&#39;06</span></td><td><strong><span>52.7</span></strong></td><td><span>98.5</span></td><td><span>43.6</span></td><td><span>0.3</span></td><td><span>3.5</span></td><td><span>40.4</span></td><td><span>109.3</span></td><td><span>11.0</span></td></tr><tr><td><span>‘07</span></td><td><strong><span>51.5</span></strong></td><td><span>95.8</span></td><td><span>56.2</span></td><td><span>0.3</span></td><td><span>3.1</span></td><td><span>36.0</span></td><td><span>109.1</span></td><td><span>10.6</span></td></tr><tr><td><span>’08</span></td><td><strong><span>51.8</span></strong></td><td><span>94.3</span></td><td><span>47.1</span></td><td><span>0.5</span></td><td><span>4.9</span></td><td><span>29.5</span></td><td><span>109.0</span></td><td><span>8.6</span></td></tr><tr><td><span>’09</span></td><td><strong><span>56.2</span></strong></td><td><span>101.1</span></td><td><span>47.9</span></td><td><span>0.9</span></td><td><span>5.6</span></td><td><span>33.8</span></td><td><span>109.3</span></td><td><span>10.6</span></td></tr><tr><td><span>’10</span></td><td><strong><span>54.1</span></strong></td><td><span>104.5</span></td><td><span>25.9</span></td><td><span>1.7</span></td><td><span>3.8</span></td><td><span>32.4</span></td><td><span>109.4</span></td><td><span>10.9</span></td></tr><tr><td><span>&#39;11</span></td><td><strong><span>45.2</span></strong></td><td><span>83.1</span></td><td><span>23.5</span></td><td><span>1.9</span></td><td><span>3.6</span></td><td><span>26.1</span></td><td><span>107.3</span></td><td><span>9.7</span></td></tr><tr><td><span>‘12</span></td><td><strong><span>45.7</span></strong></td><td><span>86.6</span></td><td><span>17.3</span></td><td><span>1.7</span></td><td><span>3.4</span></td><td><span>30.8</span></td><td><span>105.9</span></td><td><span>11.1</span></td></tr><tr><td><span>&#39;13</span></td><td><strong><span>47.5</span></strong></td><td><span>89.2</span></td><td><span>20.5</span></td><td><span>0.9</span></td><td><span>4.5</span></td><td><span>29.6</span></td><td><span>106.5</span></td><td><span>12.3</span></td></tr><tr><td><span>&#39;14</span></td><td><strong><span>49.7</span></strong></td><td><span>95.4</span></td><td><span>26.0</span></td><td><span>1.1</span></td><td><span>4.2</span></td><td><span>35.9</span></td><td><span>106.3</span></td><td><span>13.9</span></td></tr><tr><td><span>‘15</span></td><td><strong><span>50.2</span></strong></td><td><span>101.0</span></td><td><span>23.0</span></td><td><span>1.2</span></td><td><span>4.1</span></td><td><span>32.1</span></td><td><span>104.5</span></td><td><span>13.6</span></td></tr><tr><td><span>‘16</span></td><td><strong><span>50.8</span></strong></td><td><span>104.7</span></td><td><span>24.6</span></td><td><span>1.8</span></td><td><span>3.7</span></td><td><span>24.6</span></td><td><span>104.7</span></td><td><span>13.4</span></td></tr><tr><td><span>‘17p</span></td><td><strong><span>48.9</span></strong></td><td><span>103.4</span></td><td><span>26.0</span></td><td><span>1.7</span></td><td><span>3.3</span></td><td><span>22.0</span></td><td><span>105.3</span></td><td><span>10.5</span></td></tr></tbody></table></figure><p><span> *사료용 제외, 쌀의 자급도 산정 시 대북지원, 해외원조 수출은 제외(2018)</span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p>&nbsp;</p><p><span>&lt;농업활성화를 위한 지원 및 인프라 구축&gt;</span></p><p><span> </span></p><p><span>지속가능 특성 </span></p><p><span>\1. 초기 자금이 부족한 청년들에게 농업 관련 인프라 구축 및 지원은 가장 절실한 문제</span></p><p><span>\2. 체계적인 귀농 교육 시스템이 존재할 시 청년들의 귀농에 대한 진입장벽을 낮출 수 있음 </span></p><p><span>\3. 디지털 농업으로 더 적은 물과 더 적은 농약을 사용함으로써 비용은 더 줄일 수 있음</span></p><p><span>\4. 스마트팜을 통해 불안정한 식량 수급 문제를 해결할 수 있음</span></p><p><span> </span></p><p><span>지속불가능 특성</span></p><p><span>\1. 스마트팜 같은 인프라 구축은 비용이 많이 들어 농가가 접근하기 힘듦</span></p><p><span>\2. 국내 농가 대부분이 ICT에 익숙하지 않은 고령층이라 도입이 어려움</span></p><p><span>\3. 청년 영농 정착 지원금의 문제점</span></p><p><span>1)바우처카드를 사용할 수 있는 곳과 가능하지 않은 곳이 어디인지 알 수 없고, 특정 인터넷쇼핑몰에서 무료배송 품목만 구매할 수 있음, 심지어 제주도에서는 구매도 불가능함. 또한 구매 물품에 대한 부분 취소도 되지 않음.</span></p><p><span>2)우리나라의 경우 현행 청년농업인 영농정착 지원자금 사업은 3년간 월 100만 원(연간 1200만원)수준으로 바우처카드로 지원함. 우리나라와 달리 유럽연합(EU) 회원국들은 의무사항으로 청년직불제를 시행하고 있는 것으로 알려지고 있음. 즉, 최소 2만5천유로(약 3,280만원) 이상의 투자계획서를 포함한 5년간의 경영계획서를 제출하면 2만유로(약 2624만원)의 초기자금과 투자금액의 10%를 보너스로 지급함. 직불금도 일본의 경우와 같이 최대 5년간 지급함.</span></p><p><span>3)의무 영농기간 3년 동안 다른 소득활동을 병행할 수가 없음. 불확실한 농업 미래에 생계유지에 대한 불안감을 증폭시킴.</span></p><p><span>4)영농지원금 부정수급·부당사용</span></p><p><span> </span></p><p><span>\4. 농업총생산액 대비 농업보조금 비율도 선진국과 비교하면 초라한 수준임. 우리나라의 농업보조금은 2017년 기준 28억9800만달러로 농업총생산액 429억8800만달러 대비 6.7%에 불과함. 농업보조금을 산정하는 방식은 나라마다 다소 차이가 있지만 농경연이 경제협력개발기구(OECD) 데이터베이스 자료를 바탕으로 산출한 통계에 따르면 대다수 선진국은 우리보다 정부가 지출하는 농업보조금 비중이 큼. OECD 평균은 10.6%였고, 유럽연합(EU)은 이보다 더 높은 17.1%에 달함. EU에 속하지는 않지만 그보다 더 강화된 농업 지원정책을 펼치는 스위스는 41.3%로 우리보다 6배 이상 높음.</span></p><p><span> </span></p><p><span>\5. 스마트농업 기술개발과 보급 확대 및 인프라 구축을 위해서는 현재 걸림돌이 되는 법·제도 정비가 요구되며 농가정보를 보호할 수 있는 개인정보 보호방안이 절실함. 또한 스마트농업에서 가장 중요한 데이터 구축 확립과 지속적인 스마트농업 발전을 위한 연구개발 중장기 로드맵도 사전에 준비돼야 함.</span></p><p><span> </span></p><p><span>&lt;정부가 하고 있는 노력&gt;</span></p><p><span>\1. 바우처 사용 확대 및 농민들의 불편사항 토대로 제도 개선</span></p><p><span>금년부터는 지원금 사용가능 업종을 열거하는 방식으로 전환하여 적용 중이다. 지원금 사용실태 분석 및 청년농 간담회 등 청년농들의 현장의견을 최대한 반영하여 농자재 구매, 마트, 주유소, 음식점, 병원 등 청년농들이 주로 사용하는 대부분의 업종을 포함하여 운영 중이다.</span></p><p><span>또한, 향후 다양한 온라인 몰에서 사용할 수 있도록 관련업계와 협의 중이다.</span></p><p><span>(그러나 업종을 확대했지만, 부분 취소나 환불 절차의 어려움에 대해서는 이렇다 할 해결책을 내놓지 못했다.)</span></p><p><span>\2. 농지와 자금, 농기계 등 영농 기반 강화 지원</span></p><p><span>2022년까지 농지매입 비축량을 2017년(1,000ha)보다 3배 이상 확대할 계획으로 지난해 농지매입비축사업은 25억 4000만원에 달한다. 또한 쌀전업농 위주의 지원에서 탈피해 청년농 등에 맞춤형 지원을 강화하는데, 쌀 이외에 타 작물을 재배할 경우 임대료를 80%까지 감면해 준다. 후계농 자금과 농신보를 개선해 자금과 담보의 애로도 완화시켰는데, 신규 청년창업농에게 농신보 보증한도상향, 보증비율 확대, 보증대상 요건 완화 등 우대보증 제도를 개선했다. </span></p><p><span>더불어 전문교육을 이수한 청년농이 스마트팜을 창업하는 경우 농신보 보증비율은 85%에서 90%로 높아졌고, 개인 한도는 최고 30억원이다. 이와 함께 농기계 임대사업 대상자 선정 시 청년창업농 우대하면서, 청년창업농 육성계획 평가 시 우수 등급을 받은 지자체의 경우 농기계 임대사업 대상 지자체 선정 시 가점을 부여한다. </span></p><p><span> </span></p><p><span>\3. 청년창업농에게 기술 교육과 컨설팅 지원</span></p><p><span>본격적 창농 전 경영실습 기회를 제공하고자 경영실습 임대농장 사업을 도입해 농어촌 공사 비축농지 등에 스마트 팜 등의 시설을 설치한 후 청년농에게 임대해준다. 나아가 청년창업농에게 현장문제 해결형 1:1 멘토링을 지원하고, 청년창업농 기술 수준 및 경영상태 진단·분석과 경영 마인드 및 농업정책 이해 제고 교육 강화가 이루어진다. 특히 영농정착지원금 지원 대상자는 매년 160시간 수준의 의무교육을 이수하도록 해 경영마인드 제고와 40시간의 기초 수준의 기술력 확보 유도 필수과정, 경영 마인드, 회계실무는 물론 품목별 생산 기술과 유통·마케팅 등 경영기법을 전수하고 있다. </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.jpg" referrerpolicy="no-referrer" alt="EMB00001c1c2e01"><span>&lt;관련지표&gt;</span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span> </span></p><p><span>농림축산식품부는 11일 2019년 청년창업농 영농정착지원사업 신청을 마감한 결과 1,600명 모집에 2,981명이 신청했다고 밝혔다. 경쟁률은 1,86대 1이다. </span></p><p><span>비전공자는 2,241명으로 75.2%, 농업고등학교나 대학에서 농업 관련 학과를 졸업한 신청자는 740명(24.8%)에 그쳤다. 도시에서 귀농을 했거나 귀농 예정인 청년도 2,125명(71.3%)으로 재촌 청년 856명(28.7) 보다 2.5배 많은 것으로 나타났다. </span></p><p><span> </span></p><p><span> </span></p><p><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png" referrerpolicy="no-referrer" alt="EMB00001c1c2e02"><span> </span></p><p><span> </span></p><p><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.jpg" referrerpolicy="no-referrer" alt="EMB00001c1c2e05"><img src="file:////Users/macbook/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png" referrerpolicy="no-referrer" alt="EMB00001c1c2e03"></p><p><span> </span></p></div>
+</body>
+</html>
